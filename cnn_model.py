@@ -24,5 +24,6 @@ def define_cnn_model():
 	# Компилируем модель
 	opt = SGD(learning_rate=0.01, momentum=0.9)
 	model.compile(optimizer=opt, loss='categorical_crossentropy', metrics=['accuracy'])
+	
 	return model
  

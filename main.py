@@ -33,6 +33,7 @@ def main():
 	
     # Инициализация модели
     model = define_cnn_model()
+    model.summary()
 
     # Обучение и оценка модели
     score, history = train_and_evaluate(

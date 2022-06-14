@@ -13,7 +13,7 @@ import matplotlib.image as mpimg
 
 EPOCHS = 10
 BATCH_SIZE = 32
-TRAIM_IMGS_QUANTITY = 10000 #MAX = 60000
+TRAIM_IMGS_QUANTITY = 60000 #MAX = 60000
 TEST_IMGS_QUANTITY = 10000 #MAX = 10000
 
 # Имя под которым будем сохранена модель
@@ -66,10 +66,6 @@ ax = []
 for i in range(10):
     img_path = './images/' + str(i) + '.png'
     prediction = predict(MODEL_NAME, img_path)
-    #print('IMAGE 1: ' + str(i))
-    #plt.title(str(prediction))
-    #image = mpimg.imread(img_path)
-    #plt.imshow(image)
     image = mpimg.imread(img_path)
     
     ax.append(fig.add_subplot(2, 5, i+1))

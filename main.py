@@ -58,10 +58,6 @@ main()
 #=====================================================
 #_________________ТЕСТИРОВАНИЕ________________________
 
-#/home/neleps/NEURAL_LABS/num_classifier/images
-#img_path = './images/2.png'
-#prediction = predict(MODEL_NAME, img_path)
-
 fig = plt.figure()
 ax = []
 for i in range(10):
@@ -74,6 +70,3 @@ for i in range(10):
     ax[i].imshow(image)
 
 plt.show()
-
-
-#print('PREDICTION: ' + str(prediction))
